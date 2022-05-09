@@ -1,19 +1,32 @@
-import data from '../../data-language.json';
+import eng from './eng.json';
+import ru from './ru.json';
 
-function getData() {
-  const newData = data.map((e) => {
-    if (e.className === 'key letter') {
-      if (e.key) {
-        e.key = e.key.toLowerCase();
-      }
-      if (e.keyRU) {
-        e.keyRU = e.keyRU.toLowerCase();
-      }
-    }
-    return e;
-  });
+class Data {
+  constructor(language) {
+    this.language = language;
+    this.eng = eng;
+    this.ru = ru;
+  }
 
-  return newData;
+  getData() {
+    const engData = this.eng.map((e) => {
+      if (e.className === 'key letter') {
+        if (e.key) {
+          e.key = e.key.toLowerCase();
+        }
+      }
+      return e;
+    });
+    const ruData = this.ru.map((e) => {
+      if (e.className === 'key letter') {
+        if (e.key) {
+          e.key = e.key.toLowerCase();
+        }
+      }
+      return e;
+    });
+    return [engData, ruData];
+  }
 }
 
-export default getData;
+export default Data;

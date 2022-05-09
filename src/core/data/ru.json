@@ -3,320 +3,305 @@
     "row": 1,
     "className": "key",
     "key": false,
-    "key__firstENG": "~",
-    "key__firstRU": "Ё",
+    "key__first": "Ё",
     "firstClassName": "key__first",
-    "key__secondENG": "`",
-    "key__secondRU": "ё",
-    "secondClassName": "key__second"
+    "key__second": "ё",
+    "secondClassName": "key__second",
+    "code": "Backquote"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__firstENG": "!",
-    "key__firstRU": "!",
+    "key__first": "!",
     "firstClassName": "key__first",
-    "key__secondENG": "1",
-    "key__secondRU": "1",
-    "secondClassName": "key__second"
+    "key__second": "1",
+    "secondClassName": "key__second",
+    "code": "Digit1"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__firstENG": "@",
-    "key__firstRU": "\"",
+    "key__first": "\"",
     "firstClassName": "key__first",
-    "key__secondENG": "2",
-    "key__secondRU": "2",
-    "secondClassName": "key__second"
+    "key__second": "2",
+    "secondClassName": "key__second",
+    "code": "Digit2"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__firstENG": "#",
-    "key__firstRU": "№",
+    "key__first": "№",
     "firstClassName": "key__first",
-    "key__secondENG": "3",
-    "key__secondRU": "3",
-    "secondClassName": "key__second"
+    "key__second": "3",
+    "secondClassName": "key__second",
+    "code": "Digit3"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__firstENG": "$",
-    "key__firstRU": ";",
+    "key__first": ";",
     "firstClassName": "key__first",
-    "key__secondENG": "4",
-    "key__secondRU": "4",
-    "secondClassName": "key__second"
+    "key__second": "4",
+    "secondClassName": "key__second",
+    "code": "Digit4"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__firstENG": "%",
-    "key__firstRU": "%",
+    "key__first": "%",
     "firstClassName": "key__first",
-    "key__secondENG": "5",
-    "key__secondRU": "5",
-    "secondClassName": "key__second"
+    "key__second": "5",
+    "secondClassName": "key__second",
+    "code": "Digit5"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__firstENG": "^",
-    "key__firstRU": ":",
+    "key__first": ":",
     "firstClassName": "key__first",
-    "key__secondENG": "6",
-    "key__secondRU": "6",
-    "secondClassName": "key__second"
+    "key__second": "6",
+    "secondClassName": "key__second",
+    "code": "Digit6"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__firstENG": "&",
-    "key__firstRU": "?",
+    "key__first": "?",
     "firstClassName": "key__first",
-    "key__secondENG": "7",
-    "key__secondRU": "7",
-    "secondClassName": "key__second"
+    "key__second": "7",
+    "secondClassName": "key__second",
+    "code": "Digit7"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__firstENG": "*",
-    "key__firstRU": "*",
+    "key__first": "*",
     "firstClassName": "key__first",
-    "key__secondENG": "8",
-    "key__secondRU": "8",
-    "secondClassName": "key__second"
+    "key__second": "8",
+    "secondClassName": "key__second",
+    "code": "Digit8"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__firstENG": "(",
-    "key__firstRU": "(",
+    "key__first": "(",
     "firstClassName": "key__first",
-    "key__secondENG": "9",
-    "key__secondRU": "9",
-    "secondClassName": "key__second"
+    "key__second": "9",
+    "secondClassName": "key__second",
+    "code": "Digit9"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__firstENG": ")",
-    "key__firstRU": ")",
+    "key__first": ")",
     "firstClassName": "key__first",
-    "key__secondENG": "0",
-    "key__secondRU": "0",
-    "secondClassName": "key__second"
+    "key__second": "0",
+    "secondClassName": "key__second",
+    "code": "Digit0"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__firstENG": "_",
-    "key__firstRU": "_",
+    "key__first": "_",
     "firstClassName": "key__first",
-    "key__secondENG": "-",
-    "key__secondRU": "-",
-    "secondClassName": "key__second"
+    "key__second": "-",
+    "secondClassName": "key__second",
+    "code": "Minus"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__firstENG": "+",
-    "key__firstRU": "+",
+    "key__first": "+",
     "firstClassName": "key__first",
-    "key__secondENG": "=",
-    "key__secondRU": "=",
-    "secondClassName": "key__second"
+    "key__second": "=",
+    "secondClassName": "key__second",
+    "code": "Equal"
   },
   {
     "row": 1,
     "className": "key backspace",
-    "key": "⟵Backspace"
+    "key": "⟵",
+    "code": "Backspace"
   },
   {
     "row": 2,
     "className": "key tab",
     "key": "Tab",
-    "keyRU": "Tab"
+    "code": "Tab"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "Q",
-    "keyRU": "Й"
+    "key": "Й",
+    "code": "KeyQ"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "W",
-    "keyRU": "Ц"
+    "key": "Ц",
+    "code": "KeyW"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "E",
-    "keyRU": "У"
+    "key": "У",
+    "code": "KeyE"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "R",
-    "keyRU": "К"
+    "key": "К",
+    "code": "KeyR"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "T",
-    "keyRU": "Е"
+    "key": "Е",
+    "code": "KeyT"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "Y",
-    "keyRU": "Н"
+    "key": "Н",
+    "code": "KeyY"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "U",
-    "keyRU": "Г"
+    "key": "Г",
+    "code": "KeyU"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "I",
-    "keyRU": "Ш"
+    "key": "Ш",
+    "code": "KeyI"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "O",
-    "keyRU": "Щ"
+    "key": "Щ",
+    "code": "KeyO"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "P",
-    "keyRU": "З"
+    "key": "З",
+    "code": "KeyP"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": false,
-    "keyRU": "Х",
-    "key__firstENG": "{",
+    "key": "Х",
     "firstClassName": "key__first",
-    "key__secondENG": "[",
-    "secondClassName": "key__second"
+    "secondClassName": "key__second",
+    "code": "BracketLeft"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": false,
-    "keyRU": "Ъ",
-    "key__firstENG": "}",
+    "key": "Ъ",
     "firstClassName": "key__first",
-    "key__secondENG": "]",
-    "secondClassName": "key__second"
+    "secondClassName": "key__second",
+    "code": "BracketRight"
   },
   {
     "row": 2,
     "className": "key",
     "key": "DEL",
-    "keyRU": "DEL"
+    "code": "Delete"
   },
   {
     "row": 3,
     "className": "key caps-lock",
-    "key": "⇪"
+    "key": "⇪",
+    "code": "CapsLock"
   },
   {
     "row": 3,
     "className": "key letter",
-    "key": "A",
-    "keyRU": "Ф"
+    "key": "Ф",
+    "code": "KeyA"
   },
   {
     "row": 3,
     "className": "key letter",
-    "key": "S",
-    "keyRU": "Ы"
+    "key": "Ы",
+    "code": "KeyS"
   },
   {
     "row": 3,
     "className": "key letter",
-    "key": "D",
-    "keyRU": "В"
+    "key": "В",
+    "code": "KeyD"
   },
   {
     "row": 3,
     "className": "key letter",
-    "key": "F",
-    "keyRU": "А"
+    "key": "А",
+    "code": "KeyF"
   },
   {
     "row": 3,
     "className": "key letter",
-    "key": "G",
-    "keyRU": "П"
+    "key": "П",
+    "code": "KeyG"
   },
   {
     "row": 3,
     "className": "key letter",
-    "key": "H",
-    "keyRU": "Р"
+    "key": "Р",
+    "code": "KeyH"
   },
   {
     "row": 3,
     "className": "key letter",
-    "key": "J",
-    "keyRU": "О"
+    "key": "О",
+    "code": "KeyJ"
   },
   {
     "row": 3,
     "className": "key letter",
-    "key": "K",
-    "keyRU": "Л"
+    "key": "Л",
+    "code": "KeyK"
   },
   {
     "row": 3,
     "className": "key letter",
-    "key": "L",
-    "keyRU": "Д"
+    "key": "Д",
+    "code": "KeyL"
   },
   {
     "row": 3,
-    "className": "key",
-    "key": false,
-    "keyRU": "Ж",
+    "className": "key letter",
+    "key": "Ж",
     "key__first": ":",
     "firstClassName": "key__first",
     "key__second": ";",
-    "secondClassName": "key__second"
+    "secondClassName": "key__second",
+    "code": "Semicolon"
   },
   {
     "row": 3,
-    "className": "key",
-    "key": false,
-    "keyRU": "Э",
+    "className": "key letter",
+    "key": "Э",
     "key__first": "\"",
     "firstClassName": "key__first",
     "key__second": "'",
-    "secondClassName": "key__second"
+    "secondClassName": "key__second",
+    "code": "Quote"
   },
   {
     "row": 3,
@@ -325,150 +310,163 @@
     "key__first": "|",
     "firstClassName": "key__first",
     "key__second": "\\",
-    "secondClassName": "key__second"
+    "secondClassName": "key__second",
+    "code": "Backslash"
   },
   {
     "row": 3,
     "className": "key enter",
-    "key": "↵"
+    "key": "↵",
+    "code": "Enter"
   },
   {
     "row": 4,
     "className": "key shift",
-    "key": "⇧ Shift"
+    "key": "⇧ Shift",
+    "code": "ShiftLeft"
   },
   {
     "row": 4,
     "className": "key letter",
-    "key": "Z",
-    "keyRU": "Я"
+    "key": "Я",
+    "code": "KeyZ"
   },
   {
     "row": 4,
     "className": "key letter",
-    "key": "X",
-    "keyRU": "Ч"
+    "key": "Ч",
+    "code": "KeyX"
   },
   {
     "row": 4,
     "className": "key letter",
-    "key": "C",
-    "keyRU": "С"
+    "key": "С",
+    "code": "KeyC"
   },
   {
     "row": 4,
     "className": "key letter",
-    "key": "V",
-    "keyRU": "М"
+    "key": "М",
+    "code": "KeyV"
   },
   {
     "row": 4,
     "className": "key letter",
-    "key": "B",
-    "keyRU": "И"
+    "key": "И",
+    "code": "KeyB"
   },
   {
     "row": 4,
     "className": "key letter",
-    "key": "N",
-    "keyRU": "Т"
+    "key": "Т",
+    "code": "KeyN"
   },
   {
     "row": 4,
     "className": "key letter",
-    "key": "M",
-    "keyRU": "Ь"
+    "key": "Ь",
+    "code": "KeyM"
   },
   {
     "row": 4,
     "className": "key letter",
-    "key": false,
-    "keyRU": "Б",
+    "key": "Б",
     "key__first": "<",
     "firstClassName": "key__first",
     "key__second": ",",
-    "secondClassName": "key__second"
+    "secondClassName": "key__second",
+    "code": "Comma"
   },
   {
     "row": 4,
     "className": "key letter",
-    "key": false,
-    "keyRU": "Ю",
+    "key": "Ю",
     "key__first": ">",
     "firstClassName": "key__first",
     "key__second": ".",
-    "secondClassName": "key__second"
+    "secondClassName": "key__second",
+    "code": "Period"
   },
   {
     "row": 4,
     "className": "key",
     "key": false,
-    "keyRU": false,
-    "key__first": "?",
-    "key__firstRU": ",",
+    "key__first": ",",
     "firstClassName": "key__first",
-    "key__second": "/",
-    "key__secondRU": ".",
-    "secondClassName": "key__second"
+    "key__second": ".",
+    "secondClassName": "key__second",
+    "code": "Slash"
   },
   {
     "row": 4,
     "className": "key",
-    "key": "&#9650;"
+    "key": "&#9650;",
+    "code": "ArrowUp"
   },
   {
     "row": 4,
     "className": "key shift",
-    "key": "⇧ Shift"
+    "key": "⇧ Shift",
+    "code": "ShiftRight"
   },
   {
     "row": 5,
     "className": "key",
-    "key": "Ctrl"
+    "key": "Ctrl",
+    "code": "ControlLeft"
   },
   {
     "row": 5,
     "className": "key",
-    "key": "Win"
+    "key": "Win",
+    "code": "MetaLeft"
   },
   {
     "row": 5,
     "className": "key",
-    "key": "Alt"
+    "key": "Alt",
+    "code": "AltLeft"
   },
   {
     "row": 5,
     "className": "key space",
-    "key": "Space"
+    "key": "Space",
+    "code": "Space"
   },
   {
     "row": 5,
     "className": "key",
-    "key": "Alt"
+    "key": "Alt",
+    "code": "AltRight"
   },
   {
     "row": 5,
     "className": "key",
-    "key": "Win"
+    "key": "Win",
+    "code": "MetaRight"
   },
   {
     "row": 5,
     "className": "key",
-    "key": "&#10096;"
+    "key": "&#10096;",
+    "code": "ArrowLeft"
   },
   {
     "row": 5,
     "className": "key",
-    "key": "&#9660;"
+    "key": "&#9660;",
+    "code": "ArrowDown"
   },
   {
     "row": 5,
     "className": "key",
-    "key": "&#10097;"
+    "key": "&#10097;",
+    "code": "ArrowRight"
   },
   {
     "row": 5,
     "className": "key",
-    "key": "Ctrl"
+    "key": "Ctrl",
+    "code": "ControlRight"
   }
 ]
