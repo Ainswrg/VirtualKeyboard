@@ -14,158 +14,26 @@ class Keyboard extends Page {
     template += `<div class="keyboard">`;
     template += `<div class="keyboard__container">`;
     if (this.data) {
-      template += `<div class="row">`;
-      if (this.language === 'ENG') {
-        template += `${this.data
-          .map((key) =>
-            key.row === 1
-              ? `
-            <div class="${key.className}">
-            ${
-              key.key
-                ? key.key
-                : `
-            <div class="${key.firstClassName}">${key.key__firstENG}</div>
-            <div class="${key.secondClassName}">${key.key__secondENG}</div>`
-            }
-            </div>`
-              : null
-          )
-          .join('')}`;
-      }
-      if (this.language === 'RU') {
-        template += `${this.data
-          .map((key) =>
-            key.row === 1
-              ? `
-            <div class="${key.className}">
-            ${
-              key.key
-                ? key.keyRU || key.key
-                : `
-            <div class="${key.firstClassName}">${key.key__firstRU}</div>
-            <div class="${key.secondClassName}">${key.key__secondRU}</div>`
-            }
-            </div>`
-              : null
-          )
-          .join('')}`;
-      }
-      template += `</div>`;
-      template += `<div class="row">`;
-      if (this.language === 'ENG') {
-        template += `${this.data
-          .map((key) =>
-            key.row === 2
-              ? `
-            <div class="${key.className}">
-            ${
-              key.key
-                ? key.key
-                : `
-            <div class="${key.firstClassName}">${key.key__firstENG}</div>
-            <div class="${key.secondClassName}">${key.key__secondENG}</div>`
-            }
-            </div>`
-              : null
-          )
-          .join('')}`;
-      }
-      if (this.language === 'RU') {
-        template += `${this.data
-          .map((key) =>
-            key.row === 2
-              ? `
-            <div class="${key.className}">
-            ${
-              key.keyRU
-                ? key.keyRU || key.key
-                : `
-            <div class="${key.firstClassName}">${key.key__firstRU}</div>
-            <div class="${key.secondClassName}">${key.key__secondRU}</div>`
-            }
-            </div>`
-              : null
-          )
-          .join('')}`;
-      }
-      template += `</div>`;
-      template += `<div class="row">`;
-      template += `${this.data
-        .map((key) =>
-          key.row === 3
-            ? `
-          <div class="${key.className}">
-          ${
-            key.key
-              ? `${this.language === 'ENG' ? key.key : key.keyRU || key.key}`
-              : `
-          <div class="${key.firstClassName}">${key.key__first}</div>
-          <div class="${key.secondClassName}">${key.key__second}</div>`
-          }
-          </div>`
-            : null
-        )
-        .join('')}`;
-      template += `</div>`;
-      if (this.language === 'ENG') {
+      for (let i = 1; i <= 5; i += 1) {
         template += `<div class="row">`;
         template += `${this.data
           .map((key) =>
-            key.row === 4
+            key.row === i
               ? `
-            <div class="${key.className}">
-            ${
-              key.key
-                ? key.key
-                : `
-            <div class="${key.firstClassName}">${key.key__first}</div>
-            <div class="${key.secondClassName}">${key.key__second}</div>`
-            }
-            </div>`
+              <div class="${key.className}" id="${key.code}">
+              ${
+                key.key
+                  ? key.key
+                  : `
+              <div class="${key.firstClassName}">${key.key__first}</div>
+              <div class="${key.secondClassName}">${key.key__second}</div>`
+              }
+              </div>`
               : null
           )
           .join('')}`;
         template += `</div>`;
       }
-      if (this.language === 'RU') {
-        template += `<div class="row">`;
-        template += `${this.data
-          .map((key) =>
-            key.row === 4
-              ? `
-            <div class="${key.className}">
-            ${
-              key.keyRU || key.key
-                ? key.keyRU || key.key
-                : `
-            <div class="${key.firstClassName}">${key.key__firstRU}</div>
-            <div class="${key.secondClassName}">${key.key__secondRU}</div>`
-            }
-            </div>`
-              : null
-          )
-          .join('')}`;
-        template += `</div>`;
-      }
-      template += `<div class="row">`;
-      template += `${this.data
-        .map((key) =>
-          key.row === 5
-            ? `
-          <div class="${key.className}">
-          ${
-            key.key
-              ? key.key
-              : `
-          <div class="${key.firstClassName}">${key.key__first}</div>
-          <div class="${key.secondClassName}">${key.key__second}</div>`
-          }
-          </div>`
-            : null
-        )
-        .join('')}`;
-      template += `</div>`;
     }
     template += `</div>`;
     template += `</div>`;
