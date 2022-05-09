@@ -1,0 +1,403 @@
+[
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "~",
+    "firstClassName": "key__first",
+    "key__second": "`",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "!",
+    "firstClassName": "key__first",
+    "key__second": "1",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "@",
+    "firstClassName": "key__first",
+    "key__second": "2",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "#",
+    "firstClassName": "key__first",
+    "key__second": "3",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "$",
+    "firstClassName": "key__first",
+    "key__second": "4",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "%",
+    "firstClassName": "key__first",
+    "key__second": "5",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "^",
+    "firstClassName": "key__first",
+    "key__second": "6",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "&",
+    "firstClassName": "key__first",
+    "key__second": "7",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "*",
+    "firstClassName": "key__first",
+    "key__second": "8",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "(",
+    "firstClassName": "key__first",
+    "key__second": "9",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": ")",
+    "firstClassName": "key__first",
+    "key__second": "0",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "_",
+    "firstClassName": "key__first",
+    "key__second": "-",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "+",
+    "firstClassName": "key__first",
+    "key__second": "=",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 1,
+    "className": "key backspace",
+    "key": "⟵Backspace"
+  },
+  {
+    "row": 2,
+    "className": "key tab",
+    "key": "Tab"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "Q"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "W"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "E"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "R"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "T"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "Y"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "U"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "I"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "O"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "P"
+  },
+  {
+    "row": 2,
+    "className": "key",
+    "key": "["
+  },
+  {
+    "row": 2,
+    "className": "key",
+    "key": "]"
+  },
+  {
+    "row": 2,
+    "className": "key",
+    "key": "DEL"
+  },
+  {
+    "row": 3,
+    "className": "key caps-lock",
+    "key": "Caps Lock"
+  },
+  {
+    "row": 3,
+    "className": "key letter",
+    "key": "A"
+  },
+  {
+    "row": 3,
+    "className": "key letter",
+    "key": "S"
+  },
+  {
+    "row": 3,
+    "className": "key letter",
+    "key": "D"
+  },
+  {
+    "row": 3,
+    "className": "key letter",
+    "key": "F"
+  },
+  {
+    "row": 3,
+    "className": "key letter",
+    "key": "G"
+  },
+  {
+    "row": 3,
+    "className": "key letter",
+    "key": "H"
+  },
+  {
+    "row": 3,
+    "className": "key letter",
+    "key": "J"
+  },
+  {
+    "row": 3,
+    "className": "key letter",
+    "key": "K"
+  },
+  {
+    "row": 3,
+    "className": "key letter",
+    "key": "L"
+  },
+  {
+    "row": 3,
+    "className": "key",
+    "key": false,
+    "key__first": ":",
+    "firstClassName": "key__first",
+    "key__second": ";",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 3,
+    "className": "key",
+    "key": false,
+    "key__first": "\"",
+    "firstClassName": "key__first",
+    "key__second": "'",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 3,
+    "className": "key",
+    "key": false,
+    "key__first": "|",
+    "firstClassName": "key__first",
+    "key__second": "\\",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 3,
+    "className": "key enter",
+    "key": "↵"
+  },
+  {
+    "row": 4,
+    "className": "key shift",
+    "key": "⇧ Shift"
+  },
+  {
+    "row": 4,
+    "className": "key letter",
+    "key": "Z"
+  },
+  {
+    "row": 4,
+    "className": "key letter",
+    "key": "X"
+  },
+  {
+    "row": 4,
+    "className": "key letter",
+    "key": "C"
+  },
+  {
+    "row": 4,
+    "className": "key letter",
+    "key": "V"
+  },
+  {
+    "row": 4,
+    "className": "key letter",
+    "key": "B"
+  },
+  {
+    "row": 4,
+    "className": "key letter",
+    "key": "N"
+  },
+  {
+    "row": 4,
+    "className": "key letter",
+    "key": "M"
+  },
+  {
+    "row": 4,
+    "className": "key",
+    "key": false,
+    "key__first": "<",
+    "firstClassName": "key__first",
+    "key__second": ",",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 4,
+    "className": "key",
+    "key": false,
+    "key__first": ">",
+    "firstClassName": "key__first",
+    "key__second": ".",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 4,
+    "className": "key",
+    "key": false,
+    "key__first": "?",
+    "firstClassName": "key__first",
+    "key__second": "/",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 4,
+    "className": "key",
+    "key": "&#9650;"
+  },
+  {
+    "row": 4,
+    "className": "key shift",
+    "key": "⇧ Shift"
+  },
+  {
+    "row": 5,
+    "className": "key",
+    "key": "Ctrl"
+  },
+  {
+    "row": 5,
+    "className": "key",
+    "key": "Win"
+  },
+  {
+    "row": 5,
+    "className": "key",
+    "key": "Alt"
+  },
+  {
+    "row": 5,
+    "className": "key space",
+    "key": "Space"
+  },
+  {
+    "row": 5,
+    "className": "key",
+    "key": "Alt"
+  },
+  {
+    "row": 5,
+    "className": "key",
+    "key": "Win"
+  },
+  {
+    "row": 5,
+    "className": "key",
+    "key": "&#10096;"
+  },
+  {
+    "row": 5,
+    "className": "key",
+    "key": "&#9660;"
+  },
+  {
+    "row": 5,
+    "className": "key",
+    "key": "&#10097;"
+  },
+  {
+    "row": 5,
+    "className": "key",
+    "key": "Ctrl"
+  }
+]
