@@ -19,6 +19,9 @@ class KeyboardPage extends Page {
   generateTextArea() {
     this.textArea.classList.add('content__textarea');
     this.textArea.id = 'textarea';
+    this.textArea.placeholder = `
+    Virtual Keyboard for Windows
+    Shift + Alt shortcut to change the keyboard language`;
 
     return this.textArea;
   }
