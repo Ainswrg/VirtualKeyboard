@@ -1,9 +1,9 @@
 import Keyboard from '../pages/keyboard';
 
 class App {
-  constructor(data) {
+  constructor(data, language) {
     this.data = data;
-    this.language = 'ENG';
+    this.language = language;
     this.container = document.body;
   }
 
@@ -49,14 +49,16 @@ class App {
     this.updateKeyboard(this.language, updateData);
   }
 
-  switchLanguage(app) {
+  switchLanguage() {
     if (this.language === 'ENG') {
       this.language = 'RU';
-      app.updateKeyboard(this.language);
+      this.updateKeyboard(this.language);
     } else if (this.language === 'RU') {
       this.language = 'ENG';
-      app.updateKeyboard(this.language);
+      this.updateKeyboard(this.language);
     }
+
+    return this.language;
   }
 
   run() {
