@@ -9,5 +9,17 @@ window.onload = () => {
   if (data) {
     const app = new App(data);
     app.run();
+
+    window.addEventListener('keydown', (e) => {
+      e.preventDefault();
+      if (e.shiftKey) {
+        if (e.key === 'Alt') {
+          app.switchLanguage(app);
+        }
+      }
+      if (e.key === 'CapsLock') {
+        app.capsLock();
+      }
+    });
   }
 };
