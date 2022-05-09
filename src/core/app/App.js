@@ -9,6 +9,7 @@ class App {
     this.language = '';
     this.container = document.body;
     this.display = '';
+    this.keyboard = '';
   }
 
   keyboardPage(data = this.data, language = this.language) {
@@ -43,6 +44,7 @@ class App {
     const page = this.keyboardPage(data, language);
     const pageHtml = page.generateKeyboard();
     keyboard.append(pageHtml);
+    this.keyboard = keyboard;
   }
 
   capsLock() {
@@ -115,6 +117,8 @@ class App {
     switch (keyCode) {
       case 'CapsLock': {
         this.capsLock();
+        const keyId = document.querySelector(`#CapsLock`);
+        keyId.classList.add('active');
         break;
       }
       case 'Backspace': {
@@ -175,8 +179,8 @@ class App {
       }
       case 'ShiftLeft':
       case 'ShiftRight': {
+        const keyArr = document.querySelectorAll('.letter');
         if (option === 'shift') {
-          const keyArr = document.querySelectorAll('.letter');
           keyArr.forEach((keyLetter) => {
             keyLetter.classList.add('upperCase');
           });
@@ -208,38 +212,75 @@ class App {
     this.display.setSelectionRange(cursor, cursor);
   }
 
+  dataKeyboardEvent(e, opt) {
+    this.data.forEach((key) => {
+      let currKey = '';
+      if (e.code === key.code) {
+        const keyId = document.querySelector(`#${key.code}`);
+        keyId.classList.add('active');
+        if (opt === 'add') {
+          if (e.shiftKey) {
+            if (keyId.classList.contains('letter')) {
+              currKey = key.key.toUpperCase() || key.key__first;
+            } else {
+              currKey = key.key || key.key__first;
+            }
+            this.printKeys(key.code, currKey, 'shift');
+          } else if (e.ctrlKey) {
+            currKey = key.key || key.key__second;
+            this.printKeys(key.code, currKey, 'ctrl');
+          } else {
+            currKey = key.key || key.key__second;
+            this.printKeys(key.code, currKey);
+          }
+        } else {
+          keyId.classList.remove('active');
+        }
+      }
+
+      const eKey = [...e.path].length === 12 ? [...e.path][0].id : [...e.path][1].id;
+      if (key.code === eKey) {
+        const keyId = document.querySelector(`#${key.code}`);
+        keyId.classList.add('active');
+        currKey = key.key || key.key__second;
+        if (opt === 'add') {
+          if (e.shiftKey) {
+            if (keyId.classList.contains('letter')) {
+              currKey = key.key.toUpperCase() || key.key__first;
+            } else {
+              currKey = key.key || key.key__first;
+            }
+            this.printKeys(key.code, currKey, 'shift');
+          } else {
+            this.printKeys(key.code, currKey);
+          }
+        } else {
+          keyId.classList.remove('active');
+        }
+      }
+    });
+  }
+
   addListeners() {
     window.addEventListener('keydown', (e) => {
       e.preventDefault();
-
-      this.data.forEach((key) => {
-        if (e.code === key.code) {
-          const keyId = document.querySelector(`#${key.code}`);
-          keyId.classList.add('active');
-          if (e.shiftKey) {
-            const currKey = key.key.toUpperCase() || key.key__first;
-            this.printKeys(key.code, currKey, 'shift');
-          } else if (e.ctrlKey) {
-            const currKey = key.key || key.key__second;
-            this.printKeys(key.code, currKey, 'ctrl');
-          } else {
-            const currKey = key.key || key.key__second;
-            this.printKeys(key.code, currKey);
-          }
-        }
-      });
+      this.dataKeyboardEvent(e, 'add');
     });
     window.addEventListener('keyup', (e) => {
       const keyArr = document.querySelectorAll('.letter');
       keyArr.forEach((keyLetter) => {
         keyLetter.classList.remove('upperCase');
       });
-      this.data.forEach((key) => {
-        if (e.code === key.code) {
-          const keyId = document.querySelector(`#${key.code}`);
-          keyId.classList.remove('active');
-        }
-      });
+      this.dataKeyboardEvent(e);
+    });
+
+    this.keyboard = document.querySelector('.keyboard');
+    window.addEventListener('mousedown', (e) => {
+      this.dataKeyboardEvent(e, 'add');
+    });
+    this.keyboard = document.querySelector('.keyboard');
+    window.addEventListener('mouseup', (e) => {
+      this.dataKeyboardEvent(e);
     });
   }
 
@@ -247,8 +288,8 @@ class App {
     const languageLocal = this.getLocalStorage() || 'ENG';
     const dataLanguage = languageLocal === 'ENG' ? engData : ruData;
     this.updateDataAndLang(dataLanguage, languageLocal);
-    this.addListeners();
     this.renderNewPage();
+    this.addListeners();
   }
 }
 
