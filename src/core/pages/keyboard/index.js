@@ -1,6 +1,12 @@
 import Page from '../../templates/Page';
 
 class Keyboard extends Page {
+  constructor(data, language) {
+    super(data, language);
+    this.data = data;
+    this.language = language;
+  }
+
   generateContent() {
     let template = '';
     template += `<div class="content__container">`;
@@ -9,40 +15,80 @@ class Keyboard extends Page {
     template += `<div class="keyboard__container">`;
     if (this.data) {
       template += `<div class="row">`;
-      template += `${this.data
-        .map((key) =>
-          key.row === 1
-            ? `
-          <div class="${key.className}">
-          ${
-            key.key !== false
-              ? key.key
-              : `
-          <div class="${key.firstClassName}">${key.key__first}</div>
-          <div class="${key.secondClassName}">${key.key__second}</div>`
-          }
-          </div>`
-            : null
-        )
-        .join('')}`;
+      if (this.language === 'ENG') {
+        template += `${this.data
+          .map((key) =>
+            key.row === 1
+              ? `
+            <div class="${key.className}">
+            ${
+              key.key
+                ? key.key
+                : `
+            <div class="${key.firstClassName}">${key.key__firstENG}</div>
+            <div class="${key.secondClassName}">${key.key__secondENG}</div>`
+            }
+            </div>`
+              : null
+          )
+          .join('')}`;
+      }
+      if (this.language === 'RU') {
+        template += `${this.data
+          .map((key) =>
+            key.row === 1
+              ? `
+            <div class="${key.className}">
+            ${
+              key.key
+                ? key.keyRU || key.key
+                : `
+            <div class="${key.firstClassName}">${key.key__firstRU}</div>
+            <div class="${key.secondClassName}">${key.key__secondRU}</div>`
+            }
+            </div>`
+              : null
+          )
+          .join('')}`;
+      }
       template += `</div>`;
       template += `<div class="row">`;
-      template += `${this.data
-        .map((key) =>
-          key.row === 2
-            ? `
-          <div class="${key.className}">
-          ${
-            key.key !== false
-              ? key.key
-              : `
-          <div class="${key.firstClassName}">${key.key__first}</div>
-          <div class="${key.secondClassName}">${key.key__second}</div>`
-          }
-          </div>`
-            : null
-        )
-        .join('')}`;
+      if (this.language === 'ENG') {
+        template += `${this.data
+          .map((key) =>
+            key.row === 2
+              ? `
+            <div class="${key.className}">
+            ${
+              key.key
+                ? key.key
+                : `
+            <div class="${key.firstClassName}">${key.key__firstENG}</div>
+            <div class="${key.secondClassName}">${key.key__secondENG}</div>`
+            }
+            </div>`
+              : null
+          )
+          .join('')}`;
+      }
+      if (this.language === 'RU') {
+        template += `${this.data
+          .map((key) =>
+            key.row === 2
+              ? `
+            <div class="${key.className}">
+            ${
+              key.keyRU
+                ? key.keyRU || key.key
+                : `
+            <div class="${key.firstClassName}">${key.key__firstRU}</div>
+            <div class="${key.secondClassName}">${key.key__secondRU}</div>`
+            }
+            </div>`
+              : null
+          )
+          .join('')}`;
+      }
       template += `</div>`;
       template += `<div class="row">`;
       template += `${this.data
@@ -51,8 +97,8 @@ class Keyboard extends Page {
             ? `
           <div class="${key.className}">
           ${
-            key.key !== false
-              ? key.key
+            key.key
+              ? `${this.language === 'ENG' ? key.key : key.keyRU || key.key}`
               : `
           <div class="${key.firstClassName}">${key.key__first}</div>
           <div class="${key.secondClassName}">${key.key__second}</div>`
@@ -62,24 +108,46 @@ class Keyboard extends Page {
         )
         .join('')}`;
       template += `</div>`;
-      template += `<div class="row">`;
-      template += `${this.data
-        .map((key) =>
-          key.row === 4
-            ? `
-          <div class="${key.className}">
-          ${
-            key.key !== false
-              ? key.key
-              : `
-          <div class="${key.firstClassName}">${key.key__first}</div>
-          <div class="${key.secondClassName}">${key.key__second}</div>`
-          }
-          </div>`
-            : null
-        )
-        .join('')}`;
-      template += `</div>`;
+      if (this.language === 'ENG') {
+        template += `<div class="row">`;
+        template += `${this.data
+          .map((key) =>
+            key.row === 4
+              ? `
+            <div class="${key.className}">
+            ${
+              key.key
+                ? key.key
+                : `
+            <div class="${key.firstClassName}">${key.key__first}</div>
+            <div class="${key.secondClassName}">${key.key__second}</div>`
+            }
+            </div>`
+              : null
+          )
+          .join('')}`;
+        template += `</div>`;
+      }
+      if (this.language === 'RU') {
+        template += `<div class="row">`;
+        template += `${this.data
+          .map((key) =>
+            key.row === 4
+              ? `
+            <div class="${key.className}">
+            ${
+              key.keyRU || key.key
+                ? key.keyRU || key.key
+                : `
+            <div class="${key.firstClassName}">${key.key__firstRU}</div>
+            <div class="${key.secondClassName}">${key.key__secondRU}</div>`
+            }
+            </div>`
+              : null
+          )
+          .join('')}`;
+        template += `</div>`;
+      }
       template += `<div class="row">`;
       template += `${this.data
         .map((key) =>
@@ -87,7 +155,7 @@ class Keyboard extends Page {
             ? `
           <div class="${key.className}">
           ${
-            key.key !== false
+            key.key
               ? key.key
               : `
           <div class="${key.firstClassName}">${key.key__first}</div>

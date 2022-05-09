@@ -3,117 +3,143 @@
     "row": 1,
     "className": "key",
     "key": false,
-    "key__first": "~",
+    "key__firstENG": "~",
+    "key__firstRU": "Ё",
     "firstClassName": "key__first",
-    "key__second": "`",
+    "key__secondENG": "`",
+    "key__secondRU": "ё",
     "secondClassName": "key__second"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__first": "!",
+    "key__firstENG": "!",
+    "key__firstRU": "!",
     "firstClassName": "key__first",
-    "key__second": "1",
+    "key__secondENG": "1",
+    "key__secondRU": "1",
     "secondClassName": "key__second"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__first": "@",
+    "key__firstENG": "@",
+    "key__firstRU": "\"",
     "firstClassName": "key__first",
-    "key__second": "2",
+    "key__secondENG": "2",
+    "key__secondRU": "2",
     "secondClassName": "key__second"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__first": "#",
+    "key__firstENG": "#",
+    "key__firstRU": "№",
     "firstClassName": "key__first",
-    "key__second": "3",
+    "key__secondENG": "3",
+    "key__secondRU": "3",
     "secondClassName": "key__second"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__first": "$",
+    "key__firstENG": "$",
+    "key__firstRU": ";",
     "firstClassName": "key__first",
-    "key__second": "4",
+    "key__secondENG": "4",
+    "key__secondRU": "4",
     "secondClassName": "key__second"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__first": "%",
+    "key__firstENG": "%",
+    "key__firstRU": "%",
     "firstClassName": "key__first",
-    "key__second": "5",
+    "key__secondENG": "5",
+    "key__secondRU": "5",
     "secondClassName": "key__second"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__first": "^",
+    "key__firstENG": "^",
+    "key__firstRU": ":",
     "firstClassName": "key__first",
-    "key__second": "6",
+    "key__secondENG": "6",
+    "key__secondRU": "6",
     "secondClassName": "key__second"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__first": "&",
+    "key__firstENG": "&",
+    "key__firstRU": "?",
     "firstClassName": "key__first",
-    "key__second": "7",
+    "key__secondENG": "7",
+    "key__secondRU": "7",
     "secondClassName": "key__second"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__first": "*",
+    "key__firstENG": "*",
+    "key__firstRU": "*",
     "firstClassName": "key__first",
-    "key__second": "8",
+    "key__secondENG": "8",
+    "key__secondRU": "8",
     "secondClassName": "key__second"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__first": "(",
+    "key__firstENG": "(",
+    "key__firstRU": "(",
     "firstClassName": "key__first",
-    "key__second": "9",
+    "key__secondENG": "9",
+    "key__secondRU": "9",
     "secondClassName": "key__second"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__first": ")",
+    "key__firstENG": ")",
+    "key__firstRU": ")",
     "firstClassName": "key__first",
-    "key__second": "0",
+    "key__secondENG": "0",
+    "key__secondRU": "0",
     "secondClassName": "key__second"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__first": "_",
+    "key__firstENG": "_",
+    "key__firstRU": "_",
     "firstClassName": "key__first",
-    "key__second": "-",
+    "key__secondENG": "-",
+    "key__secondRU": "-",
     "secondClassName": "key__second"
   },
   {
     "row": 1,
     "className": "key",
     "key": false,
-    "key__first": "+",
+    "key__firstENG": "+",
+    "key__firstRU": "+",
     "firstClassName": "key__first",
-    "key__second": "=",
+    "key__secondENG": "=",
+    "key__secondRU": "=",
     "secondClassName": "key__second"
   },
   {
@@ -124,127 +150,159 @@
   {
     "row": 2,
     "className": "key tab",
-    "key": "Tab"
+    "key": "Tab",
+    "keyRU": "Tab"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "Q"
+    "key": "Q",
+    "keyRU": "Й"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "W"
+    "key": "W",
+    "keyRU": "Ц"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "E"
+    "key": "E",
+    "keyRU": "У"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "R"
+    "key": "R",
+    "keyRU": "К"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "T"
+    "key": "T",
+    "keyRU": "Е"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "Y"
+    "key": "Y",
+    "keyRU": "Н"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "U"
+    "key": "U",
+    "keyRU": "Г"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "I"
+    "key": "I",
+    "keyRU": "Ш"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "O"
+    "key": "O",
+    "keyRU": "Щ"
   },
   {
     "row": 2,
     "className": "key letter",
-    "key": "P"
+    "key": "P",
+    "keyRU": "З"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": false,
+    "keyRU": "Х",
+    "key__firstENG": "{",
+    "firstClassName": "key__first",
+    "key__secondENG": "[",
+    "secondClassName": "key__second"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": false,
+    "keyRU": "Ъ",
+    "key__firstENG": "}",
+    "firstClassName": "key__first",
+    "key__secondENG": "]",
+    "secondClassName": "key__second"
   },
   {
     "row": 2,
     "className": "key",
-    "key": "["
-  },
-  {
-    "row": 2,
-    "className": "key",
-    "key": "]"
-  },
-  {
-    "row": 2,
-    "className": "key",
-    "key": "DEL"
+    "key": "DEL",
+    "keyRU": "DEL"
   },
   {
     "row": 3,
     "className": "key caps-lock",
-    "key": "Caps Lock"
+    "key": "⇪"
   },
   {
     "row": 3,
     "className": "key letter",
-    "key": "A"
+    "key": "A",
+    "keyRU": "Ф"
   },
   {
     "row": 3,
     "className": "key letter",
-    "key": "S"
+    "key": "S",
+    "keyRU": "Ы"
   },
   {
     "row": 3,
     "className": "key letter",
-    "key": "D"
+    "key": "D",
+    "keyRU": "В"
   },
   {
     "row": 3,
     "className": "key letter",
-    "key": "F"
+    "key": "F",
+    "keyRU": "А"
   },
   {
     "row": 3,
     "className": "key letter",
-    "key": "G"
+    "key": "G",
+    "keyRU": "П"
   },
   {
     "row": 3,
     "className": "key letter",
-    "key": "H"
+    "key": "H",
+    "keyRU": "Р"
   },
   {
     "row": 3,
     "className": "key letter",
-    "key": "J"
+    "key": "J",
+    "keyRU": "О"
   },
   {
     "row": 3,
     "className": "key letter",
-    "key": "K"
+    "key": "K",
+    "keyRU": "Л"
   },
   {
     "row": 3,
     "className": "key letter",
-    "key": "L"
+    "key": "L",
+    "keyRU": "Д"
   },
   {
     "row": 3,
     "className": "key",
     "key": false,
+    "keyRU": "Ж",
     "key__first": ":",
     "firstClassName": "key__first",
     "key__second": ";",
@@ -254,6 +312,7 @@
     "row": 3,
     "className": "key",
     "key": false,
+    "keyRU": "Э",
     "key__first": "\"",
     "firstClassName": "key__first",
     "key__second": "'",
@@ -281,42 +340,50 @@
   {
     "row": 4,
     "className": "key letter",
-    "key": "Z"
+    "key": "Z",
+    "keyRU": "Я"
   },
   {
     "row": 4,
     "className": "key letter",
-    "key": "X"
+    "key": "X",
+    "keyRU": "Ч"
   },
   {
     "row": 4,
     "className": "key letter",
-    "key": "C"
+    "key": "C",
+    "keyRU": "С"
   },
   {
     "row": 4,
     "className": "key letter",
-    "key": "V"
+    "key": "V",
+    "keyRU": "М"
   },
   {
     "row": 4,
     "className": "key letter",
-    "key": "B"
+    "key": "B",
+    "keyRU": "И"
   },
   {
     "row": 4,
     "className": "key letter",
-    "key": "N"
+    "key": "N",
+    "keyRU": "Т"
   },
   {
     "row": 4,
     "className": "key letter",
-    "key": "M"
+    "key": "M",
+    "keyRU": "Ь"
   },
   {
     "row": 4,
-    "className": "key",
+    "className": "key letter",
     "key": false,
+    "keyRU": "Б",
     "key__first": "<",
     "firstClassName": "key__first",
     "key__second": ",",
@@ -324,8 +391,9 @@
   },
   {
     "row": 4,
-    "className": "key",
+    "className": "key letter",
     "key": false,
+    "keyRU": "Ю",
     "key__first": ">",
     "firstClassName": "key__first",
     "key__second": ".",
@@ -335,9 +403,12 @@
     "row": 4,
     "className": "key",
     "key": false,
+    "keyRU": false,
     "key__first": "?",
+    "key__firstRU": ",",
     "firstClassName": "key__first",
     "key__second": "/",
+    "key__secondRU": ".",
     "secondClassName": "key__second"
   },
   {
