@@ -12,7 +12,7 @@
 }
 html,
 body {
-  background-color: #c7d2fe;
+  background-color: $background-color;
   height: 100%;
   font-family: 'Oxygen', sans-serif;
   font-weight: 300;
@@ -29,7 +29,7 @@ body {
 .header {
   width: 100%;
   height: 60px;
-  background-color: #312e81;
+  background-color: $background-header;
 }
 .main {
   flex: 1 1 auto;
@@ -38,7 +38,7 @@ body {
 .footer {
   width: 100%;
   height: 90px;
-  background-color: rgb(16, 9, 41);
+  background-color: $background-footer;
   &__container {
     height: 100%;
     display: flex;
