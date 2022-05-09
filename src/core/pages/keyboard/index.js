@@ -1,18 +1,32 @@
 import Page from '../../templates/Page';
 
-class Keyboard extends Page {
+class KeyboardPage extends Page {
   constructor(data, language) {
     super(data, language);
     this.data = data;
     this.language = language;
+    this.contentContainer = document.createElement('div');
+    this.textArea = document.createElement('textarea');
+    this.keyboard = document.createElement('div');
   }
 
   generateContent() {
+    this.contentContainer.classList.add('content__container');
+    this.keyboard.classList.add('keyboard');
+    return this.contentContainer;
+  }
+
+  generateTextArea() {
+    this.textArea.classList.add('content__textarea');
+    this.textArea.id = 'textarea';
+
+    return this.textArea;
+  }
+
+  generateKeyboard() {
+    const container = document.createElement('div');
+    container.classList.add('keyboard__container');
     let template = '';
-    template += `<div class="content__container">`;
-    template += `<textarea class="content__textarea"></textarea>`;
-    template += `<div class="keyboard">`;
-    template += `<div class="keyboard__container">`;
     if (this.data) {
       for (let i = 1; i <= 5; i += 1) {
         template += `<div class="row">`;
@@ -35,15 +49,15 @@ class Keyboard extends Page {
         template += `</div>`;
       }
     }
-    template += `</div>`;
-    template += `</div>`;
-    template += `</div>`;
-
-    return template;
+    container.innerHTML = template;
+    return container;
   }
 
   render() {
     const content = this.generateContent();
+    this.keyboard.append(this.generateKeyboard());
+    content.append(this.generateTextArea());
+    content.append(this.keyboard);
     this.createHeader();
     this.createContent(content);
     this.createFooter();
@@ -51,4 +65,4 @@ class Keyboard extends Page {
   }
 }
 
-export default Keyboard;
+export default KeyboardPage;
