@@ -97,11 +97,21 @@
         width: 100%;
       }
       &__second {
-
       }
     }
     .letter {
       font-weight: 900;
+    }
+    .active {
+      background: $key-press;
+      transform: translate(0, 0.55em);
+      &::before {
+        box-shadow: 0 0 0 2px $key-border, 0 0.5em 0 0 $background-keyboard;
+        transform: translate3d(0, 0.35em, -1em);
+      }
+    }
+    .upperCase {
+      text-transform: uppercase;
     }
     .focused {
       background: $key-press;
