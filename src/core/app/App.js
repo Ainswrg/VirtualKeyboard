@@ -10,6 +10,7 @@ class App {
     this.container = document.body;
     this.display = '';
     this.keyboard = '';
+    this.caps = '';
   }
 
   keyboardPage(data = this.data, language = this.language) {
@@ -110,7 +111,21 @@ class App {
       } else if (opt === 'delete') {
         this.display.value = left + right.slice(1);
       } else {
-        this.display.value = `${left}${val}${right}`;
+        const shift = document.querySelector('#ShiftLeft');
+        const caps = document.querySelector('#CapsLock');
+        if (caps.classList.contains('focused')) {
+          if (shift.classList.contains('active')) {
+            this.display.value = `${left}${val.toLowerCase()}${right}`;
+          } else {
+            this.display.value = `${left}${val.toUpperCase()}${right}`;
+          }
+        } else if (!caps.classList.contains('focused')) {
+          if (shift.classList.contains('active')) {
+            this.display.value = `${left}${val.toUpperCase()}${right}`;
+          } else {
+            this.display.value = `${left}${val.toLowerCase()}${right}`;
+          }
+        }
       }
     };
 
@@ -251,6 +266,13 @@ class App {
               currKey = key.key || key.key__first;
             }
             this.printKeys(key.code, currKey, 'shift');
+          } else if (eKey === 'ShiftLeft' || eKey === 'ShiftRight') {
+            if (keyId.classList.contains('letter')) {
+              currKey = key.key.toUpperCase() || key.key__first;
+            } else {
+              currKey = key.key || key.key__first;
+            }
+            this.printKeys(key.code, currKey, 'shift');
           } else {
             this.printKeys(key.code, currKey);
           }
@@ -261,26 +283,59 @@ class App {
     });
   }
 
+  checkCapsLock(arr, opt) {
+    const caps = document.querySelector('#CapsLock');
+    this.caps = caps;
+    arr.forEach((keyLetter) => {
+      if (opt === 'add') {
+        if (caps.classList.contains('focused')) {
+          keyLetter.classList.add('lowerCase');
+        }
+      }
+      if (opt === 'del') {
+        if (caps.classList.contains('focused')) {
+          keyLetter.classList.remove('lowerCase');
+        }
+        keyLetter.classList.remove('upperCase');
+      }
+    });
+  }
+
   addListeners() {
     window.addEventListener('keydown', (e) => {
+      const keyArr = document.querySelectorAll('.letter');
       e.preventDefault();
       this.dataKeyboardEvent(e, 'add');
+      if (e.code === 'ShiftLeft') {
+        this.checkCapsLock(keyArr, 'add');
+      }
     });
     window.addEventListener('keyup', (e) => {
       const keyArr = document.querySelectorAll('.letter');
-      keyArr.forEach((keyLetter) => {
-        keyLetter.classList.remove('upperCase');
-      });
+      if (e.code === 'ShiftLeft') {
+        this.checkCapsLock(keyArr, 'del');
+      }
       this.dataKeyboardEvent(e);
     });
-
-    this.keyboard = document.querySelector('.keyboard');
     window.addEventListener('mousedown', (e) => {
       this.dataKeyboardEvent(e, 'add');
+      this.data.forEach((key) => {
+        const eKey = [...e.path].length === 12 ? [...e.path][0].id : [...e.path][1].id;
+        if (eKey === key.code) {
+          const keyArr = document.querySelectorAll('.letter');
+          this.checkCapsLock(keyArr, 'add');
+        }
+      });
     });
-    this.keyboard = document.querySelector('.keyboard');
     window.addEventListener('mouseup', (e) => {
       this.dataKeyboardEvent(e);
+      this.data.forEach((key) => {
+        const eKey = [...e.path].length === 12 ? [...e.path][0].id : [...e.path][1].id;
+        if (eKey === key.code) {
+          const keyArr = document.querySelectorAll('.letter');
+          this.checkCapsLock(keyArr, 'del');
+        }
+      });
     });
   }
 
