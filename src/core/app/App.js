@@ -205,8 +205,12 @@ class App {
       case 'AltLeft':
       case 'AltRight': {
         if (option === 'shift') {
-          const currLang = this.switchLanguage();
-          this.setLocalStorage(currLang);
+          const keyId = document.querySelector(`#AltLeft`);
+          keyId.classList.add('active');
+          setTimeout(() => {
+            const currLang = this.switchLanguage();
+            this.setLocalStorage(currLang);
+          }, 150);
         }
         break;
       }
