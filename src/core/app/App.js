@@ -306,36 +306,32 @@ class App {
       const keyArr = document.querySelectorAll('.letter');
       e.preventDefault();
       this.dataKeyboardEvent(e, 'add');
-      if (e.code === 'ShiftLeft') {
+      if (e.code === 'ShiftLeft' || e.code === 'ShiftRight') {
         this.checkCapsLock(keyArr, 'add');
       }
     });
     window.addEventListener('keyup', (e) => {
       const keyArr = document.querySelectorAll('.letter');
-      if (e.code === 'ShiftLeft') {
+      if (e.code === 'ShiftLeft' || e.code === 'ShiftRight') {
         this.checkCapsLock(keyArr, 'del');
       }
       this.dataKeyboardEvent(e);
     });
     window.addEventListener('mousedown', (e) => {
       this.dataKeyboardEvent(e, 'add');
-      this.data.forEach((key) => {
-        const eKey = [...e.path].length === 12 ? [...e.path][0].id : [...e.path][1].id;
-        if (eKey === key.code) {
-          const keyArr = document.querySelectorAll('.letter');
-          this.checkCapsLock(keyArr, 'add');
-        }
-      });
+      const eKey = [...e.path].length === 12 ? [...e.path][0].id : [...e.path][1].id;
+      const keyArr = document.querySelectorAll('.letter');
+      if (eKey === 'ShiftLeft' || eKey === 'ShiftRight') {
+        this.checkCapsLock(keyArr, 'add');
+      }
     });
     window.addEventListener('mouseup', (e) => {
       this.dataKeyboardEvent(e);
-      this.data.forEach((key) => {
-        const eKey = [...e.path].length === 12 ? [...e.path][0].id : [...e.path][1].id;
-        if (eKey === key.code) {
-          const keyArr = document.querySelectorAll('.letter');
-          this.checkCapsLock(keyArr, 'del');
-        }
-      });
+      const eKey = [...e.path].length === 12 ? [...e.path][0].id : [...e.path][1].id;
+      const keyArr = document.querySelectorAll('.letter');
+      if (eKey === 'ShiftLeft' || eKey === 'ShiftRight') {
+        this.checkCapsLock(keyArr, 'del');
+      }
     });
   }
 
