@@ -1,0 +1,9 @@
+node_modules
+dist
+eslintrc.json
+.eslintignore
+.prettierrc
+tsconfig.json
+webpack.config.js
+webpack.dev.config.js
+webpack.prod.config.js
