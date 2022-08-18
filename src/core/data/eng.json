@@ -1,0 +1,480 @@
+[
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "~",
+    "firstClassName": "key__first",
+    "key__second": "`",
+    "secondClassName": "key__second",
+    "code": "Backquote"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "!",
+    "firstClassName": "key__first",
+    "key__second": "1",
+    "secondClassName": "key__second",
+    "code": "Digit1"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "@",
+    "firstClassName": "key__first",
+    "key__second": "2",
+    "secondClassName": "key__second",
+    "code": "Digit2"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "#",
+    "firstClassName": "key__first",
+    "key__second": "3",
+    "secondClassName": "key__second",
+    "code": "Digit3"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "$",
+    "firstClassName": "key__first",
+    "key__second": "4",
+    "secondClassName": "key__second",
+    "code": "Digit4"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "%",
+    "firstClassName": "key__first",
+    "key__second": "5",
+    "secondClassName": "key__second",
+    "code": "Digit5"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "^",
+    "firstClassName": "key__first",
+    "key__second": "6",
+    "secondClassName": "key__second",
+    "code": "Digit6"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "&",
+    "firstClassName": "key__first",
+    "key__second": "7",
+    "secondClassName": "key__second",
+    "code": "Digit7"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "*",
+    "firstClassName": "key__first",
+    "key__second": "8",
+    "secondClassName": "key__second",
+    "code": "Digit8"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "(",
+    "firstClassName": "key__first",
+    "key__second": "9",
+    "secondClassName": "key__second",
+    "code": "Digit9"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": ")",
+    "firstClassName": "key__first",
+    "key__second": "0",
+    "secondClassName": "key__second",
+    "code": "Digit0"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "_",
+    "firstClassName": "key__first",
+    "key__second": "-",
+    "secondClassName": "key__second",
+    "code": "Minus"
+  },
+  {
+    "row": 1,
+    "className": "key",
+    "key": false,
+    "key__first": "+",
+    "firstClassName": "key__first",
+    "key__second": "=",
+    "secondClassName": "key__second",
+    "code": "Equal"
+  },
+  {
+    "row": 1,
+    "className": "key backspace",
+    "key": "⟵",
+    "code": "Backspace"
+  },
+  {
+    "row": 2,
+    "className": "key tab",
+    "key": "Tab",
+    "code": "Tab"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "Q",
+    "code": "KeyQ"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "W",
+    "code": "KeyW"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "E",
+    "code": "KeyE"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "R",
+    "code": "KeyR"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "T",
+    "code": "KeyT"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "Y",
+    "code": "KeyY"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "U",
+    "code": "KeyU"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "I",
+    "code": "KeyI"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "O",
+    "code": "KeyO"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": "P",
+    "code": "KeyP"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": false,
+    "key__first": "{",
+    "firstClassName": "key__first",
+    "key__second": "[",
+    "secondClassName": "key__second",
+    "code": "BracketLeft"
+  },
+  {
+    "row": 2,
+    "className": "key letter",
+    "key": false,
+    "keyRU": "Ъ",
+    "key__first": "}",
+    "firstClassName": "key__first",
+    "key__second": "]",
+    "secondClassName": "key__second",
+    "code": "BracketRight"
+  },
+  {
+    "row": 2,
+    "className": "key",
+    "key": "DEL",
+    "keyRU": "DEL",
+    "code": "Delete"
+  },
+  {
+    "row": 3,
+    "className": "key caps-lock",
+    "key": "⇪",
+    "code": "CapsLock"
+  },
+  {
+    "row": 3,
+    "className": "key letter",
+    "key": "A",
+    "code": "KeyA"
+  },
+  {
+    "row": 3,
+    "className": "key letter",
+    "key": "S",
+    "code": "KeyS"
+  },
+  {
+    "row": 3,
+    "className": "key letter",
+    "key": "D",
+    "code": "KeyD"
+  },
+  {
+    "row": 3,
+    "className": "key letter",
+    "key": "F",
+    "code": "KeyF"
+  },
+  {
+    "row": 3,
+    "className": "key letter",
+    "key": "G",
+    "code": "KeyG"
+  },
+  {
+    "row": 3,
+    "className": "key letter",
+    "key": "H",
+    "code": "KeyH"
+  },
+  {
+    "row": 3,
+    "className": "key letter",
+    "key": "J",
+    "code": "KeyJ"
+  },
+  {
+    "row": 3,
+    "className": "key letter",
+    "key": "K",
+    "code": "KeyK"
+  },
+  {
+    "row": 3,
+    "className": "key letter",
+    "key": "L",
+    "code": "KeyL"
+  },
+  {
+    "row": 3,
+    "className": "key",
+    "key": false,
+    "key__first": ":",
+    "firstClassName": "key__first",
+    "key__second": ";",
+    "secondClassName": "key__second",
+    "code": "Semicolon"
+  },
+  {
+    "row": 3,
+    "className": "key",
+    "key": false,
+    "key__first": "\"",
+    "firstClassName": "key__first",
+    "key__second": "'",
+    "secondClassName": "key__second",
+    "code": "Quote"
+  },
+  {
+    "row": 3,
+    "className": "key",
+    "key": false,
+    "key__first": "|",
+    "firstClassName": "key__first",
+    "key__second": "\\",
+    "secondClassName": "key__second",
+    "code": "Backslash"
+  },
+  {
+    "row": 3,
+    "className": "key enter",
+    "key": "↵",
+    "code": "Enter"
+  },
+  {
+    "row": 4,
+    "className": "key shift",
+    "key": "⇧ Shift",
+    "code": "ShiftLeft"
+  },
+  {
+    "row": 4,
+    "className": "key letter",
+    "key": "Z",
+    "code": "KeyZ"
+  },
+  {
+    "row": 4,
+    "className": "key letter",
+    "key": "X",
+    "code": "KeyX"
+  },
+  {
+    "row": 4,
+    "className": "key letter",
+    "key": "C",
+    "code": "KeyC"
+  },
+  {
+    "row": 4,
+    "className": "key letter",
+    "key": "V",
+    "code": "KeyV"
+  },
+  {
+    "row": 4,
+    "className": "key letter",
+    "key": "B",
+    "code": "KeyB"
+  },
+  {
+    "row": 4,
+    "className": "key letter",
+    "key": "N",
+    "code": "KeyN"
+  },
+  {
+    "row": 4,
+    "className": "key letter",
+    "key": "M",
+    "code": "KeyM"
+  },
+  {
+    "row": 4,
+    "className": "key letter",
+    "key": false,
+    "key__first": "<",
+    "firstClassName": "key__first",
+    "key__second": ",",
+    "secondClassName": "key__second",
+    "code": "Comma"
+  },
+  {
+    "row": 4,
+    "className": "key letter",
+    "key": false,
+    "keyRU": "Ю",
+    "key__first": ">",
+    "firstClassName": "key__first",
+    "key__second": ".",
+    "secondClassName": "key__second",
+    "code": "Period"
+  },
+  {
+    "row": 4,
+    "className": "key",
+    "key": false,
+    "keyRU": false,
+    "key__first": "?",
+    "firstClassName": "key__first",
+    "key__second": "/",
+    "secondClassName": "key__second",
+    "code": "Slash"
+  },
+  {
+    "row": 4,
+    "className": "key",
+    "key": "&#9650;",
+    "code": "ArrowUp"
+  },
+  {
+    "row": 4,
+    "className": "key shift",
+    "key": "⇧ Shift",
+    "code": "ShiftRight"
+  },
+  {
+    "row": 5,
+    "className": "key",
+    "key": "Ctrl",
+    "code": "ControlLeft"
+  },
+  {
+    "row": 5,
+    "className": "key",
+    "key": "Win",
+    "code": "MetaLeft"
+  },
+  {
+    "row": 5,
+    "className": "key",
+    "key": "Alt",
+    "code": "AltLeft"
+  },
+  {
+    "row": 5,
+    "className": "key space",
+    "key": "Space",
+    "code": "Space"
+  },
+  {
+    "row": 5,
+    "className": "key",
+    "key": "Alt",
+    "code": "AltRight"
+  },
+  {
+    "row": 5,
+    "className": "key",
+    "key": "Win",
+    "code": "MetaRight"
+  },
+  {
+    "row": 5,
+    "className": "key",
+    "key": "&#10096;",
+    "code": "ArrowLeft"
+  },
+  {
+    "row": 5,
+    "className": "key",
+    "key": "&#9660;",
+    "code": "ArrowDown"
+  },
+  {
+    "row": 5,
+    "className": "key",
+    "key": "&#10097;",
+    "code": "ArrowRight"
+  },
+  {
+    "row": 5,
+    "className": "key",
+    "key": "Ctrl",
+    "code": "ControlRight"
+  }
+]
