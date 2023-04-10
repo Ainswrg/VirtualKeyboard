@@ -256,8 +256,11 @@ class App {
           keyId.classList.remove('active');
         }
       }
+      const eKey =
+        e.composedPath().length === 12
+          ? e.composedPath()[0].id
+          : e.composedPath()[1].id;
 
-      const eKey = [...e.path].length === 12 ? [...e.path][0].id : [...e.path][1].id;
       if (key.code === eKey) {
         const keyId = document.querySelector(`#${key.code}`);
         keyId.classList.add('active');
@@ -321,17 +324,24 @@ class App {
       }
       this.dataKeyboardEvent(e);
     });
-    window.addEventListener('mousedown', (e) => {
-      this.dataKeyboardEvent(e, 'add');
-      const eKey = [...e.path].length === 12 ? [...e.path][0].id : [...e.path][1].id;
+    window.addEventListener('mousedown', (event) => {
+      this.dataKeyboardEvent(event, 'add');
+      const eKey =
+        event.composedPath().length === 12
+          ? event.composedPath()[0].id
+          : event.composedPath()[1].id;
       const keyArr = document.querySelectorAll('.letter');
       if (eKey === 'ShiftLeft' || eKey === 'ShiftRight') {
         this.checkCapsLock(keyArr, 'add');
       }
     });
-    window.addEventListener('mouseup', (e) => {
-      this.dataKeyboardEvent(e);
-      const eKey = [...e.path].length === 12 ? [...e.path][0].id : [...e.path][1].id;
+
+    window.addEventListener('mouseup', (event) => {
+      this.dataKeyboardEvent(event);
+      const eKey =
+        event.composedPath().length === 12
+          ? event.composedPath()[0].id
+          : event.composedPath()[1].id;
       const keyArr = document.querySelectorAll('.letter');
       if (eKey === 'ShiftLeft' || eKey === 'ShiftRight') {
         this.checkCapsLock(keyArr, 'del');

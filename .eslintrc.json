@@ -17,5 +17,12 @@
         "project": "./tsconfig.json"
     },
     "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "parser": "flow"
+        }
+      ]
     }
 }
